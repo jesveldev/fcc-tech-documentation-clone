@@ -1,0 +1,93 @@
+body{
+	padding:2% 0 0 22.5%;
+	font-family: "Open Sans",sans-serif;
+}
+
+section header{
+	font-size:1.75em;
+}
+
+#navbar{
+	position:fixed;
+	left:0;
+	top:0;
+	display:flex;
+	flex-flow: column nowrap;
+	justify-content:space-evenly;
+	background-color: white;
+	width:20vw;
+	height:100vh;
+	border-right:2.5px solid gray;
+	overflow: hidden;
+}
+
+#navbar header{
+	font-size:1.75em;
+	border-bottom:1px solid black;
+	width: 100%;
+	text-align:center;
+	padding-bottom:5%;
+	align-items:center;
+}
+
+#navbar header, #navbar a{
+	border-bottom:1px solid black;
+}
+
+#navbar a{
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	padding-bottom:5%;
+	padding-left:10%;
+	color:rgba(0,0,0,0.7);
+	text-decoration: none;
+}
+
+#navbar a:last-child{
+	border:none;
+}
+
+p,li{
+	color:rgba(0,0,0,0.7);
+	letter-spacing: 0.5px;
+	margin-left: 1.25%;
+	font-size:0.9em;
+}
+
+li{
+	margin-left:1.75%;
+}
+
+div code{
+	display:block;
+	color: #4d4e53;
+	background-color: #f7f7f7;
+	padding:2% 0;
+	padding-left: 3%;
+	font-style: small-caps;
+	border-radius:5px;
+}
+
+.main-section{
+	margin-bottom: 3%;
+}
+
+
+@media screen and (max-width:815px){
+	body{
+		padding-left:0;
+	}
+	#navbar{
+		display:none;
+	}
+	.main-section header{
+		margin-bottom: 5%;
+	}
+}
+
+@media screen and (max-width:515px){
+	.main-section{
+		margin-bottom:10%;
+	}
+}
